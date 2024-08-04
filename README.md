@@ -1,0 +1,1 @@
+# yapp-nexters-conf-sequence-game
