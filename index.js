@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
     { text: "동물" },
     { text: "운동종목" },
     { text: "직업" },
-    { text: "브랜드" },
+    { text: "노래" },
     { text: "속담" },
-    { text: "베스킨라빈스 메뉴" },
+    { text: "영화" },
   ];
 
   const cardsContainer = document.querySelector(".cards-container");
@@ -53,15 +53,5 @@ document.addEventListener("DOMContentLoaded", () => {
   function flipCard(card) {
     card.classList.add("flipped");
     const cardText = card.getAttribute("data-text");
-
-    card.querySelector(".card-inner").addEventListener(
-      "transitionend",
-      () => {
-        setTimeout(() => {
-          alert(`뽑은 카드: ${cardText}`);
-        }, 100);
-      },
-      { once: true }
-    );
   }
 });
